@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 
 const api = express();
 api.use(express.json());
+api.use(express.urlencoded({ extended: true }));
 
 const mongoDBURL = "mongodb+srv://root_mongo:mongo_root_123@cluster-api-crud-umpuh.mongodb.net/test?retryWrites=true&w=majority";
 
